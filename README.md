@@ -1,0 +1,1 @@
+# Shoe-Selling-E-Commerce-Platform-Manual-API-Testing-Assessment
