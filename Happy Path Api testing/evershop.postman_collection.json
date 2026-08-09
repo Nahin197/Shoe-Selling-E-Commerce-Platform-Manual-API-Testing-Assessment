@@ -1,0 +1,273 @@
+{
+  "info": {
+    "_postman_id": "7e94bc4e-dae1-40ee-a979-68ef31171cea",
+    "name": "evershop",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "40637292",
+    "_collection_link": "https://go.postman.co/collection/40637292-7e94bc4e-dae1-40ee-a979-68ef31171cea?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "get search iteam",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://demo.evershop.io/search?keyword=stainless&ajax=true",
+          "protocol": "https",
+          "host": [
+            "demo",
+            "evershop",
+            "io"
+          ],
+          "path": [
+            "search"
+          ],
+          "query": [
+            {
+              "key": "keyword",
+              "value": "stainless"
+            },
+            {
+              "key": "ajax",
+              "value": "true"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "view iteam details",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://demo.evershop.io/accessories/stainless-steel-thermos-yellow?ajax=true",
+          "protocol": "https",
+          "host": [
+            "demo",
+            "evershop",
+            "io"
+          ],
+          "path": [
+            "accessories",
+            "stainless-steel-thermos-yellow"
+          ],
+          "query": [
+            {
+              "key": "ajax",
+              "value": "true"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "view iteam details with color",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://demo.evershop.io/accessories/stainless-steel-thermos-yellow?color=2&ajax=true",
+          "protocol": "https",
+          "host": [
+            "demo",
+            "evershop",
+            "io"
+          ],
+          "path": [
+            "accessories",
+            "stainless-steel-thermos-yellow"
+          ],
+          "query": [
+            {
+              "key": "color",
+              "value": "2"
+            },
+            {
+              "key": "ajax",
+              "value": "true"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "add to cart",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"sku\": \"THERMO-005-BLK\",\r\n    \"qty\": 3\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://demo.evershop.io/api/cart/mine/items",
+          "protocol": "https",
+          "host": [
+            "demo",
+            "evershop",
+            "io"
+          ],
+          "path": [
+            "api",
+            "cart",
+            "mine",
+            "items"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "view-cart",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://demo.evershop.io/cart?ajax=true",
+          "protocol": "https",
+          "host": [
+            "demo",
+            "evershop",
+            "io"
+          ],
+          "path": [
+            "cart"
+          ],
+          "query": [
+            {
+              "key": "ajax",
+              "value": "true"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "increase iteam",
+      "request": {
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"qty\": 1,\r\n    \"action\": \"increase\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://demo.evershop.io/api/cart/dbdbe5c5-a906-4d58-9930-29e49d28c22d/items/c248f7d7-0fc5-4daa-8cd7-7b3084560703",
+          "protocol": "https",
+          "host": [
+            "demo",
+            "evershop",
+            "io"
+          ],
+          "path": [
+            "api",
+            "cart",
+            "dbdbe5c5-a906-4d58-9930-29e49d28c22d",
+            "items",
+            "c248f7d7-0fc5-4daa-8cd7-7b3084560703"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "decrease iteam",
+      "request": {
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"qty\": 1,\r\n    \"action\": \"decrease\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://demo.evershop.io/api/cart/dbdbe5c5-a906-4d58-9930-29e49d28c22d/items/c248f7d7-0fc5-4daa-8cd7-7b3084560703",
+          "protocol": "https",
+          "host": [
+            "demo",
+            "evershop",
+            "io"
+          ],
+          "path": [
+            "api",
+            "cart",
+            "dbdbe5c5-a906-4d58-9930-29e49d28c22d",
+            "items",
+            "c248f7d7-0fc5-4daa-8cd7-7b3084560703"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Remove Cart",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "https://demo.evershop.io/api/cart/dbdbe5c5-a906-4d58-9930-29e49d28c22d/items/c248f7d7-0fc5-4daa-8cd7-7b3084560703",
+          "protocol": "https",
+          "host": [
+            "demo",
+            "evershop",
+            "io"
+          ],
+          "path": [
+            "api",
+            "cart",
+            "dbdbe5c5-a906-4d58-9930-29e49d28c22d",
+            "items",
+            "c248f7d7-0fc5-4daa-8cd7-7b3084560703"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "view cart again to verify",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://demo.evershop.io/cart?ajax=true",
+          "protocol": "https",
+          "host": [
+            "demo",
+            "evershop",
+            "io"
+          ],
+          "path": [
+            "cart"
+          ],
+          "query": [
+            {
+              "key": "ajax",
+              "value": "true"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
