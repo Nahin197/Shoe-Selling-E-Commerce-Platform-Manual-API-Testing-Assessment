@@ -3,6 +3,7 @@
 
 <div align="center">
 
+
 ![Testing](https://img.shields.io/badge/Type-Manual%20%26%20API%20Testing-blue?style=for-the-badge&logo=testinglibrary&logoColor=white)
 ![API](https://img.shields.io/badge/API%20Testing-Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
 ![Platform](https://img.shields.io/badge/Platform-EverShop%20Demo-orange?style=for-the-badge&logo=shopify&logoColor=white)
@@ -16,6 +17,15 @@
 **Test Date:** 2026-08-08  
 
 </div>
+
+---
+## 📂 Project Resources
+
+- 📑 **[All Test Reports](https://drive.google.com/drive/folders/1c1IWsf686nbQij8ujdmJyYAZjM0zjXyq?usp=drive_link)**  
+  All testing reports and documentation
+
+- 🐛 **[All Bug Screenshots](https://drive.google.com/drive/folders/1ewA0caJgmWZftsI_YE4kp30zObepnadR?usp=drive_link)**  
+  Screenshots of all identified bugs
 
 ---
 
